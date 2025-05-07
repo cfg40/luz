@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elena Beauty | Maquilladora Profesional & Diseño de Cejas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .gallery-item {
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .gallery-item img {
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .floating-button {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-sans bg-rose-50">
+    <!-- Header/Navbar -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <i class="fas fa-paint-brush text-2xl text-pink-600 mr-2"></i>
+                    <span class="text-xl font-bold text-gray-800">Luz Peñafiel</span>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-800 hover:text-pink-600 transition">Inicio</a>
+                    <a href="#servicios" class="text-gray-800 hover:text-pink-600 transition">Servicios</a>
+                    <a href="#galeria" class="text-gray-800 hover:text-pink-600 transition">Galería</a>
+                    <a href="#sobre-mi" class="text-gray-800 hover:text-pink-600 transition">Sobre Mí</a>
+                    <a href="#contacto" class="text-gray-800 hover:text-pink-600 transition">Contacto</a>
+                </nav>
+                
+                <div class="md:hidden">
+                    <button class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero min-h-screen flex items-center justify-center text-white pt-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Transforma tu Belleza</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Maquillaje profesional y diseño de cejas que realzan tu belleza natural</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contacto" class="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full font-semibold transition">Reserva Ahora</a>
+                <a href="#galeria" class="border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-full font-semibold transition">Ver Trabajos</a>
+            </div>
+        </div>
+        
+        <a href="#servicios" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white text-2xl floating-button">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">Mis Servicios</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Servicio 1 -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="bg-pink-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-eye text-3xl text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Diseño de Cejas</h3>
+                    <p class="text-gray-600 mb-4">Técnicas personalizadas para cejas perfectamente definidas que enmarcan tu rostro.</p>
+                    <span class="text-pink-600 font-bold">Desde $350</span>
+                </div>
+                
+                <!-- Servicio 2 -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="bg-pink-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-magic text-3xl text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Maquillaje Profesional</h3>
+                    <p class="text-gray-600 mb-4">Desde looks naturales hasta maquillaje de fiesta o novias, realzando tus mejores rasgos.</p>
+                    <span class="text-pink-600 font-bold">Desde $600</span>
+                </div>
+                
+                <!-- Servicio 3 -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="bg-pink-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-spa text-3xl text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Tratamientos Faciales</h3>
+                    <p class="text-gray-600 mb-4">Preparación y cuidado de la piel para un maquillaje impecable y duradero.</p>
+                    <span class="text-pink-600 font-bold">Desde $450</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Section -->
+    <section id="galeria" class="py-20 bg-rose-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-6">Mi Trabajo</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-16">Descubre algunos de mis trabajos más recientes y la transformación que logro en mis clientas.</p>
+            
+            <!-- Filtros -->
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <button class="px-4 py-2 bg-pink-600 text-white rounded-full font-medium filter-btn active" data-filter="all">Todos</button>
+                <button class="px-4 py-2 bg-white text-gray-800 rounded-full font-medium filter-btn" data-filter="cejas">Cejas</button>
+                <button class="px-4 py-2 bg-white text-gray-800 rounded-full font-medium filter-btn" data-filter="maquillaje">Maquillaje</button>
+                <button class="px-4 py-2 bg-white text-gray-800 rounded-full font-medium filter-btn" data-filter="antes-despues">Antes/Después</button>
+            </div>
+            
+            <!-- Galería Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Item 1 -->
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md" data-category="cejas">
+                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0732a5623?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Diseño de cejas" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg text-gray-800">Diseño de Cejas</h3>
+                        <p class="text-gray-600">Técnica de microblading para cejas naturales</p>
+                    </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md" data-category="maquillaje">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Maquillaje de noche" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg text-gray-800">Maquillaje de Noche</h3>
+                        <p class="text-gray-600">Look smokey eyes con labios nude</p>
+                    </div>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md" data-category="antes-despues">
+                    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Transformación de cejas" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg text-gray-800">Transformación de Cejas</h3>
+                        <p class="text-gray-600">Antes y después de laminado de cejas</p>
+                    </div>
+                </div>
+                
+                <!-- Item 4 -->
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md" data-category="maquillaje">
+                    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80" alt="Maquillaje natural" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg text-gray-800">Maquillaje Natural</h3>
+                        <p class="text-gray-600">Look fresco para el día a día</p>
+                    </div>
+                </div>
+                
+                <!-- Item 5 -->
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md" data-category="cejas">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Cejas henna" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg text-gray-800">Cejas con Henna</h3>
+                        <p class="text-gray-600">Tinte semipermanente para cejas</p>
+                    </div>
+                </div>
+                
+                <!-- Item 6 -->
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md" data-category="antes-despues">
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Transformación maquillaje" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg text-gray-800">Transformación Completa</h3>
+                        <p class="text-gray-600">Maquillaje y cejas para evento especial</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full font-semibold transition">Ver Más Trabajos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí Section -->
+    <section id="sobre-mi" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a05d5e885f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Elena Beauty" class="rounded-lg shadow-xl w-full max-w-lg mx-auto">
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Sobre Mí</h2>
+                    <p class="text-gray-600 mb-4">Hola, soy Elena, maquilladora profesional y especialista en diseño de cejas con más de 8 años de experiencia transformando rostros y realzando la belleza natural de mis clientas.</p>
+                    <p class="text-gray-600 mb-6">Mi pasión por el maquillaje y la estética facial me ha llevado a formarme con los mejores profesionales a nivel internacional, dominando las técnicas más avanzadas para lograr resultados naturales y armoniosos.</p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-certificate text-pink-600 mr-2"></i>
+                            <span class="text-gray-800">Certificada internacionalmente</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-heart text-pink-600 mr-2"></i>
+                            <span class="text-gray-800">Enfoque personalizado</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-star text-pink-600 mr-2"></i>
+                            <span class="text-gray-800">Materiales de alta calidad</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-smile text-pink-600 mr-2"></i>
+                            <span class="text-gray-800">+500 clientas satisfechas</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contacto" class="inline-block bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full font-semibold transition">Agenda una cita</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section class="py-20 bg-rose-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">Lo que dicen mis clientas</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonio 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Elena transformó mis cejas por completo. Después de años de sobre-depilarme, logró darles una forma perfecta que enmarca mi rostro. ¡No puedo vivir sin sus laminados!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ana Martínez</h4>
+                            <p class="text-gray-500 text-sm">Cliente desde 2020</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"El maquillaje que Elena hizo para mi boda fue perfecto. Se mantuvo impecable durante toda la noche y recibí tantos cumplidos. ¡La recomiendo 100%!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Laura González</h4>
+                            <p class="text-gray-500 text-sm">Novia 2022</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Nunca me había sentido tan cómoda con mis cejas hasta que conocí a Elena. Su técnica de microblading es increíble y el resultado parece totalmente natural."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sofía Ramírez</h4>
+                            <p class="text-gray-500 text-sm">Cliente desde 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-gradient-to-r from-pink-500 to-rose-500 rounded-2xl shadow-xl overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-10 text-white">
+                        <h2 class="text-3xl font-bold mb-6">Reserva tu cita</h2>
+                        <p class="mb-8">Completa el formulario y me pondré en contacto contigo para confirmar tu cita y resolver cualquier duda.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <i class="fas fa-phone-alt mr-4 text-xl"></i>
+                                <div>
+                                    <p class="font-semibold">Teléfono</p>
+                                    <p>+52 55 1234 5678</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope mr-4 text-xl"></i>
+                                <div>
+                                    <p class="font-semibold">Email</p>
+                                    <p>hola@elenabeauty.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt mr-4 text-xl"></i>
+                                <div>
+                                    <p class="font-semibold">Estudio</p>
+                                    <p>Av. Reforma 123, CDMX</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-10 flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 bg-white p-10">
+                        <form class="space-y-6">
+                            <div>
+                                <label for="nombre" class="block text-gray-700 font-medium mb-2">Nombre completo</label>
+                                <input type="text" id="nombre" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+                            </div>
+                            
+                            <div>
+                                <label for="telefono" class="block text-gray-700 font-medium mb-2">Teléfono</label>
+                                <input type="tel" id="telefono" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+                            </div>
+                            
+                            <div>
+                                <label for="servicio" class="block text-gray-700 font-medium mb-2">Servicio de interés</label>
+                                <select id="servicio" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+                                    <option>Selecciona un servicio</option>
+                                    <option>Diseño de Cejas</option>
+                                    <option>Maquillaje Profesional</option>
+                                    <option>Tratamientos Faciales</option>
+                                    <option>Microblading</option>
+                                    <option>Laminado de Cejas</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="mensaje" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+                                <textarea id="mensaje" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 px-6 rounded-lg transition">Enviar solicitud</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <i class="fas fa-paint-brush text-2xl text-pink-600 mr-2"></i>
+                        <span class="text-xl font-bold">Elena Beauty</span>
+                    </div>
+                    <p class="mt-2 text-gray-400">Maquillaje profesional y diseño de cejas</p>
+                </div>
+                
+                <div class="flex flex-col items-center md:items-end">
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">© 2023 Elena Beauty. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-600 transition z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Filtro de galería
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remover clase active de todos los botones
+                    filterButtons.forEach(btn => btn.classList.remove('active', 'bg-pink-600', 'text-white'));
+                    filterButtons.forEach(btn => btn.classList.add('bg-white', 'text-gray-800'));
+                    
+                    // Agregar clase active al botón clickeado
+                    this.classList.add('active', 'bg-pink-600', 'text-white');
+                    this.classList.remove('bg-white', 'text-gray-800');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Smooth scrolling para los enlaces del menú
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Cambiar navbar al hacer scroll
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 100) {
+                    header.classList.add('shadow-lg');
+                } else {
+                    header.classList.remove('shadow-lg');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

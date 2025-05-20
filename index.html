@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80');
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/fondo.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -51,15 +51,19 @@
         }
     </style>
 </head>
+
+
 <body class="font-sans bg-rose-50">
     <!-- Header/Navbar -->
     <header class="fixed w-full bg-white shadow-md z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
-                    <i class="fas fa-paint-brush text-2xl text-pink-600 mr-2"></i>
-                    <span class="text-xl font-bold text-gray-800">Luz Peñafiel</span>
-                </div>
+                <div class="flex items-center">
+                    <!-- <i class="fa-solid fa-eye text-2xl text-pink-600 mr-2"></i>
+                    <span class="text-xl font-bold text-gray-800">Luz Peñafiel</span> -->
+                    <img src="img/logo-LATERAL2.png" alt="Luz Peñafiel" class="h-12 w-auto object-contain">
+                </div>                </div>
                 
                 <nav class="hidden md:flex space-x-8">
                     <a href="#inicio" class="text-gray-800 hover:text-pink-600 transition">Inicio</a>
@@ -80,12 +84,20 @@
 
     <!-- Hero Section -->
     <section id="inicio" class="hero min-h-screen flex items-center justify-center text-white pt-20">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">Transforma tu Belleza</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Maquillaje profesional y diseño de cejas que realzan tu belleza natural</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#contacto" class="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full font-semibold transition">Reserva Ahora</a>
-                <a href="#galeria" class="border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-full font-semibold transition">Ver Trabajos</a>
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-center">
+            <!-- Contenedor de la imagen -->
+            <div class="mb-8 md:mb-0 md:mr-12 flex-shrink-0">
+                <img src="img/luz-fondo.png"
+                     alt="Luz Peñafiel" class="rounded-lg shadow-xl w-64 h-70 object-cover mx-auto md:mx-0">
+            </div>
+            <!-- Contenedor del contenido -->
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Luz Peñafiel</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-2xl">Soy <b>Lashista profesional</b> y especialista en diseño de extensiones de pestañas, laminado de cejas y lifting de pestañas con + de 100 clientas satisfechas</p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="#contacto" class="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full font-semibold transition">Reserva Ahora</a>
+                    <a href="#galeria" class="border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-full font-semibold transition">Ver Trabajos</a>
+                </div>
             </div>
         </div>
         
@@ -105,9 +117,9 @@
                     <div class="bg-pink-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-eye text-3xl text-pink-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Diseño de Cejas</h3>
-                    <p class="text-gray-600 mb-4">Técnicas personalizadas para cejas perfectamente definidas que enmarcan tu rostro.</p>
-                    <span class="text-pink-600 font-bold">Desde $350</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Extensión de pestañas clásicas</h3>
+                    <p class="text-gray-600 mb-4">Look natural con pestañas más largas y definidas, perfectas para diario.</p>
+                    <span class="text-pink-600 font-bold">S/. 100</span>
                 </div>
                 
                 <!-- Servicio 2 -->
@@ -115,9 +127,9 @@
                     <div class="bg-pink-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-magic text-3xl text-pink-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Maquillaje Profesional</h3>
-                    <p class="text-gray-600 mb-4">Desde looks naturales hasta maquillaje de fiesta o novias, realzando tus mejores rasgos.</p>
-                    <span class="text-pink-600 font-bold">Desde $600</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Extensión de pestañas de volumen</h3>
+                    <p class="text-gray-600 mb-4">Aumenta la densidad de tus pestañas con un efecto glamuroso.</p>
+                    <span class="text-pink-600 font-bold">S/. 150</span>
                 </div>
                 
                 <!-- Servicio 3 -->
@@ -125,9 +137,48 @@
                     <div class="bg-pink-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-spa text-3xl text-pink-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Tratamientos Faciales</h3>
-                    <p class="text-gray-600 mb-4">Preparación y cuidado de la piel para un maquillaje impecable y duradero.</p>
-                    <span class="text-pink-600 font-bold">Desde $450</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Extensión de pestañas tecnológicas</h3>
+                    <p class="text-gray-600 mb-4">Extensiones ligeras y avanzadas para máxima duración y comodidad visual.</p>
+                    <span class="text-pink-600 font-bold">S/. 130</span>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="bg-pink-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-eye text-3xl text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Lifting de pestañas</h3>
+                    <p class="text-gray-600 mb-4">Eleva tus pestañas naturales sin usar extensiones ni químicos agresivos.</p>
+                    <span class="text-pink-600 font-bold">S/. 90</span>
+                </div>
+                
+                <!-- Servicio 5 -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="bg-pink-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-magic text-3xl text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Laminado de cejas</h3>
+                    <p class="text-gray-600 mb-4">Alisa, da forma y fija tus cejas con acabado profesional.</p>
+                    <span class="text-pink-600 font-bold">S/. 30</span>
+                </div>
+                
+                <!-- Servicio 6 -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="bg-pink-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-spa text-3xl text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Pigmentación de cejas</h3>
+                    <p class="text-gray-600 mb-4">Rellena y define tus cejas con color semipermanente de larga duración.</p>
+                    <span class="text-pink-600 font-bold">S/. 25</span>
+                </div>
+              <!-- Servicio 7 -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="bg-pink-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-eye  text-3xl text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Depilación de cejas</h3>
+                    <p class="text-gray-600 mb-4">Diseño personalizado y limpieza precisa para resaltar tu expresión facial.</p>
+                    <span class="text-pink-600 font-bold">S/. 10</span>
                 </div>
             </div>
         </div>
@@ -140,66 +191,66 @@
             <p class="text-center text-gray-600 max-w-2xl mx-auto mb-16">Descubre algunos de mis trabajos más recientes y la transformación que logro en mis clientas.</p>
             
             <!-- Filtros -->
-            <div class="flex flex-wrap justify-center gap-3 mb-10">
+            <!-- <div class="flex flex-wrap justify-center gap-3 mb-10">
                 <button class="px-4 py-2 bg-pink-600 text-white rounded-full font-medium filter-btn active" data-filter="all">Todos</button>
                 <button class="px-4 py-2 bg-white text-gray-800 rounded-full font-medium filter-btn" data-filter="cejas">Cejas</button>
                 <button class="px-4 py-2 bg-white text-gray-800 rounded-full font-medium filter-btn" data-filter="maquillaje">Maquillaje</button>
                 <button class="px-4 py-2 bg-white text-gray-800 rounded-full font-medium filter-btn" data-filter="antes-despues">Antes/Después</button>
-            </div>
+            </div> -->
             
             <!-- Galería Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Item 1 -->
                 <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md" data-category="cejas">
-                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0732a5623?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Diseño de cejas" class="w-full h-64 object-cover">
+                    <img src="img/1.png" alt="Diseño de cejas" class="w-full h-90 object-contain">
                     <div class="p-4">
-                        <h3 class="font-bold text-lg text-gray-800">Diseño de Cejas</h3>
-                        <p class="text-gray-600">Técnica de microblading para cejas naturales</p>
+                        <h3 class="font-bold text-lg text-gray-800">Foto 1 ✨ </h3>
+                        <p class="text-gray-600">De mirada cansada a impacto total en minutos.</p>
                     </div>
                 </div>
                 
                 <!-- Item 2 -->
                 <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md" data-category="maquillaje">
-                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Maquillaje de noche" class="w-full h-64 object-cover">
+                    <img src="img/2.png" alt="Maquillaje de noche" class="w-full h-90 object-contain">
                     <div class="p-4">
-                        <h3 class="font-bold text-lg text-gray-800">Maquillaje de Noche</h3>
-                        <p class="text-gray-600">Look smokey eyes con labios nude</p>
+                        <h3 class="font-bold text-lg text-gray-800">Foto 2 💫 </h3>
+                        <p class="text-gray-600">¡Despierta con pestañas listas para brillar!</p>
                     </div>
                 </div>
                 
                 <!-- Item 3 -->
                 <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md" data-category="antes-despues">
-                    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Transformación de cejas" class="w-full h-64 object-cover">
+                    <img src="img/3.png" alt="Transformación de cejas" class="w-full h-90 object-contain">
                     <div class="p-4">
-                        <h3 class="font-bold text-lg text-gray-800">Transformación de Cejas</h3>
-                        <p class="text-gray-600">Antes y después de laminado de cejas</p>
+                        <h3 class="font-bold text-lg text-gray-800">Foto 3 🌟 </h3>
+                        <p class="text-gray-600">Un cambio sutil que transforma toda tu expresión.</p>
                     </div>
                 </div>
                 
                 <!-- Item 4 -->
                 <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md" data-category="maquillaje">
-                    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80" alt="Maquillaje natural" class="w-full h-64 object-cover">
+                    <img src="img/4.png" alt="Maquillaje natural" class="w-full h-90 object-containt">
                     <div class="p-4">
-                        <h3 class="font-bold text-lg text-gray-800">Maquillaje Natural</h3>
-                        <p class="text-gray-600">Look fresco para el día a día</p>
+                        <h3 class="font-bold text-lg text-gray-800">Foto 4 🔥</h3>
+                        <p class="text-gray-600">Volumen, elegancia y naturalidad en una sola sesión.</p>
                     </div>
                 </div>
                 
                 <!-- Item 5 -->
                 <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md" data-category="cejas">
-                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Cejas henna" class="w-full h-64 object-cover">
+                    <img src="img/5.png" alt="Cejas henna" class="w-full h-90 object-contain">
                     <div class="p-4">
-                        <h3 class="font-bold text-lg text-gray-800">Cejas con Henna</h3>
-                        <p class="text-gray-600">Tinte semipermanente para cejas</p>
+                        <h3 class="font-bold text-lg text-gray-800">Foto 5 💖</h3>
+                        <p class="text-gray-600">Tus ojos, más abiertos y radiantes sin maquillaje.</p>
                     </div>
                 </div>
                 
                 <!-- Item 6 -->
                 <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md" data-category="antes-despues">
-                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Transformación maquillaje" class="w-full h-64 object-cover">
+                    <img src="img/6.jpg" alt="Transformación maquillaje" class="w-full h-90 object-contain">
                     <div class="p-4">
-                        <h3 class="font-bold text-lg text-gray-800">Transformación Completa</h3>
-                        <p class="text-gray-600">Maquillaje y cejas para evento especial</p>
+                        <h3 class="font-bold text-lg text-gray-800">Foto 6 🎉</h3>
+                        <p class="text-gray-600">Resultados que hablan por sí solos. ¡Mira el cambio!</p>
                     </div>
                 </div>
             </div>
@@ -215,13 +266,13 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center">
                 <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
-                    <img src="https://images.unsplash.com/photo-1580489944761-15a05d5e885f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Elena Beauty" class="rounded-lg shadow-xl w-full max-w-lg mx-auto">
+                    <img src="img/luz-fondo2.png" alt="Elena Beauty" class="rounded-lg shadow-xl w-full max-w-lg mx-auto">
                 </div>
                 
                 <div class="lg:w-1/2">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Sobre Mí</h2>
-                    <p class="text-gray-600 mb-4">Hola, soy Elena, maquilladora profesional y especialista en diseño de cejas con más de 8 años de experiencia transformando rostros y realzando la belleza natural de mis clientas.</p>
-                    <p class="text-gray-600 mb-6">Mi pasión por el maquillaje y la estética facial me ha llevado a formarme con los mejores profesionales a nivel internacional, dominando las técnicas más avanzadas para lograr resultados naturales y armoniosos.</p>
+                    <p class="text-gray-600 mb-4">Hola, soy Luz Peñafiel, Lashista profesional y especialista en diseño de extensiónes de pestañas, laminado de cejas y liffting de pestañas, con más de 3 años de experiencia transformando miradas y realzando la belleza natural de mis clientas.</p>
+                    <p class="text-gray-600 mb-6">Mi pasión por el arte en extenciónes de pestañas y liffting, me ha llevado a formarme con los mejores profesionales a nivel internacional, dominando las técnicas más avanzadas para lograr resultados naturales y armoniosos.</p>
                     
                     <div class="grid grid-cols-2 gap-4 mb-8">
                         <div class="flex items-center">
@@ -238,7 +289,7 @@
                         </div>
                         <div class="flex items-center">
                             <i class="fas fa-smile text-pink-600 mr-2"></i>
-                            <span class="text-gray-800">+500 clientas satisfechas</span>
+                            <span class="text-gray-800">+100 clientas satisfechas</span>
                         </div>
                     </div>
                     
@@ -265,12 +316,13 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <p class="text-gray-600 mb-6">"Elena transformó mis cejas por completo. Después de años de sobre-depilarme, logró darles una forma perfecta que enmarca mi rostro. ¡No puedo vivir sin sus laminados!"</p>
+                    <p class="text-gray-600 mb-6">"Solo Luz me dejas bien llenitas las pestañas, y me duran más"</p>
                     <div class="flex items-center">
-                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                        <img src="img/businesswoman.png" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+            
                         <div>
-                            <h4 class="font-bold text-gray-800">Ana Martínez</h4>
-                            <p class="text-gray-500 text-sm">Cliente desde 2020</p>
+                            <h4 class="font-bold text-gray-800">Ester</h4>
+                            <p class="text-gray-500 text-sm">Cliente desde 2022</p>
                         </div>
                     </div>
                 </div>
@@ -286,12 +338,12 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <p class="text-gray-600 mb-6">"El maquillaje que Elena hizo para mi boda fue perfecto. Se mantuvo impecable durante toda la noche y recibí tantos cumplidos. ¡La recomiendo 100%!"</p>
+                    <p class="text-gray-600 mb-6">"Luz es la mejor, me encanta su trabajo y como me cambia la mirada. ¡La recomiendo 100%!"</p>
                     <div class="flex items-center">
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                        <img src="img/businesswoman2.png" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <h4 class="font-bold text-gray-800">Laura González</h4>
-                            <p class="text-gray-500 text-sm">Novia 2022</p>
+                            <h4 class="font-bold text-gray-800">Rosa</h4>
+                            <p class="text-gray-500 text-sm">Desde 2019</p>
                         </div>
                     </div>
                 </div>
@@ -307,12 +359,12 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <p class="text-gray-600 mb-6">"Nunca me había sentido tan cómoda con mis cejas hasta que conocí a Elena. Su técnica de microblading es increíble y el resultado parece totalmente natural."</p>
+                    <p class="text-gray-600 mb-6">"Nunca me había sentido tan cómoda con mis cejas hasta que conocí a Luz. Me encanta el efecto cat que se ve en mi mirada"</p>
                     <div class="flex items-center">
-                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                        <img src="img/businesswoman3.png" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <h4 class="font-bold text-gray-800">Sofía Ramírez</h4>
-                            <p class="text-gray-500 text-sm">Cliente desde 2021</p>
+                            <h4 class="font-bold text-gray-800">Marilyn</h4>
+                            <p class="text-gray-500 text-sm">Clienta desde 2021</p>
                         </div>
                     </div>
                 </div>
@@ -326,15 +378,15 @@
             <div class="max-w-4xl mx-auto bg-gradient-to-r from-pink-500 to-rose-500 rounded-2xl shadow-xl overflow-hidden">
                 <div class="md:flex">
                     <div class="md:w-1/2 p-10 text-white">
-                        <h2 class="text-3xl font-bold mb-6">Reserva tu cita</h2>
-                        <p class="mb-8">Completa el formulario y me pondré en contacto contigo para confirmar tu cita y resolver cualquier duda.</p>
+                        <h2 class="text-3xl font-bold mb-6">Datos de contacto</h2>
+                        <p class="mb-8">Puedes ponerte en contacto conmigo por cualquiera de estos medios</p>
                         
                         <div class="space-y-6">
                             <div class="flex items-center">
                                 <i class="fas fa-phone-alt mr-4 text-xl"></i>
                                 <div>
                                     <p class="font-semibold">Teléfono</p>
-                                    <p>+52 55 1234 5678</p>
+                                    <p>+51 956 868549</p>
                                 </div>
                             </div>
                             
@@ -342,7 +394,7 @@
                                 <i class="fas fa-envelope mr-4 text-xl"></i>
                                 <div>
                                     <p class="font-semibold">Email</p>
-                                    <p>hola@elenabeauty.com</p>
+                                    <p>luces_tj@hotmail.com</p>
                                 </div>
                             </div>
                             
@@ -350,12 +402,12 @@
                                 <i class="fas fa-map-marker-alt mr-4 text-xl"></i>
                                 <div>
                                     <p class="font-semibold">Estudio</p>
-                                    <p>Av. Reforma 123, CDMX</p>
+                                    <p>Parcona, Ica</p>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="mt-10 flex space-x-4">
+                        <!-- <div class="mt-10 flex space-x-4">
                             <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition">
                                 <i class="fab fa-instagram"></i>
                             </a>
@@ -365,10 +417,10 @@
                             <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition">
                                 <i class="fab fa-whatsapp"></i>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                     
-                    <div class="md:w-1/2 bg-white p-10">
+                    <!-- <div class="md:w-1/2 bg-white p-10">
                         <form class="space-y-6">
                             <div>
                                 <label for="nombre" class="block text-gray-700 font-medium mb-2">Nombre completo</label>
@@ -404,7 +456,7 @@
                             
                             <button type="submit" class="w-full bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 px-6 rounded-lg transition">Enviar solicitud</button>
                         </form>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -415,11 +467,12 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">
-                    <div class="flex items-center">
-                        <i class="fas fa-paint-brush text-2xl text-pink-600 mr-2"></i>
-                        <span class="text-xl font-bold">Elena Beauty</span>
-                    </div>
-                    <p class="mt-2 text-gray-400">Maquillaje profesional y diseño de cejas</p>
+                <div class="flex items-center">
+                    <!-- <i class="fa-solid fa-eye text-2xl text-pink-600 mr-2"></i>
+                    <span class="text-xl font-bold text-gray-800">Luz Peñafiel</span> -->
+                    <img src="img/logo-lateral-blanco.png" alt="Luz Peñafiel" class="h-12 w-auto object-contain">
+                </div>  
+                    <p class="mt-2 text-gray-400">Nuestro compromiso es brindar un servicio de calidad y profesionalismo.</p>
                 </div>
                 
                 <div class="flex flex-col items-center md:items-end">
@@ -434,16 +487,28 @@
                             <i class="fab fa-tiktok"></i>
                         </a>
                     </div>
-                    <p class="text-gray-400">© 2023 Elena Beauty. Todos los derechos reservados.</p>
+                    <p class="text-gray-400">© 2025 Luz Peñafiel Todos los derechos reservados.</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Floating WhatsApp Button -->
+    <footer class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+        <p class="text-center md:text-left text-gray-400 mb-2 md:mb-0">
+            Diseñado por: 
+            <a href="https://bit.ly/m/FuentesWeb" target="_blank" rel="noopener noreferrer" class="text-pink-400 hover:text-pink-600 font-semibold  transition">
+                Cristhian Fuentes 
+                <span class="text-gray-400"> | Telf. 971 221917</span>
+            </a>
+        </p>
+    </div>
+</footer>
+
+    <!-- Floating WhatsApp Button
     <a href="#" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-600 transition z-50">
         <i class="fab fa-whatsapp"></i>
-    </a>
+    </a> -->
 
     <script>
         // Filtro de galería

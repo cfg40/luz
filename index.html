@@ -53,18 +53,15 @@
 </head>
 
 
+
 <body class="font-sans bg-rose-50">
     <!-- Header/Navbar -->
     <header class="fixed w-full bg-white shadow-md z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
-                <div class="flex items-center">
-                    <!-- <i class="fa-solid fa-eye text-2xl text-pink-600 mr-2"></i>
-                    <span class="text-xl font-bold text-gray-800">Luz Peñafiel</span> -->
-                    <img src="img/logo-LATERAL2.png" alt="Luz Peñafiel" class="h-12 w-auto object-contain">
-                </div>                </div>
-                
+                    <img src="img/logo-lateral2.png" alt="Luz Peñafiel" class="h-12 w-auto object-contain">
+                </div>
                 <nav class="hidden md:flex space-x-8">
                     <a href="#inicio" class="text-gray-800 hover:text-pink-600 transition">Inicio</a>
                     <a href="#servicios" class="text-gray-800 hover:text-pink-600 transition">Servicios</a>
@@ -72,13 +69,21 @@
                     <a href="#sobre-mi" class="text-gray-800 hover:text-pink-600 transition">Sobre Mí</a>
                     <a href="#contacto" class="text-gray-800 hover:text-pink-600 transition">Contacto</a>
                 </nav>
-                
+                <!-- Botón hamburguesa -->
                 <div class="md:hidden">
-                    <button class="text-gray-800 focus:outline-none">
+                    <button id="menu-toggle" class="text-gray-800 focus:outline-none">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
+            <!-- Menú móvil oculto -->
+            <nav id="mobile-menu" class="md:hidden hidden flex-col space-y-4 mt-4 bg-white rounded-lg shadow-lg p-6">
+                <a href="#inicio" class="block text-gray-800 hover:text-pink-600 transition">Inicio</a>
+                <a href="#servicios" class="block text-gray-800 hover:text-pink-600 transition">Servicios</a>
+                <a href="#galeria" class="block text-gray-800 hover:text-pink-600 transition">Galería</a>
+                <a href="#sobre-mi" class="block text-gray-800 hover:text-pink-600 transition">Sobre Mí</a>
+                <a href="#contacto" class="block text-gray-800 hover:text-pink-600 transition">Contacto</a>
+            </nav>
         </div>
     </header>
 
@@ -566,5 +571,21 @@
             });
         });
     </script>
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function() {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+</script>
+
 </body>
 </html>
